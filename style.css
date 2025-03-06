@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Контейнер, который занимает весь экран */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: black;
+    padding: 5vw;
+}
+
+/* Контентный блок */
+.content {
+    width: min(90%, 100vw);
+    height: min(90%, 100vh);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Адаптивное изображение */
+.content>a>img {
+    max-width: 100%;
+    /* Не выходит за границы родителя */
+    height: auto;
+    /* Сохраняет пропорции */
+    margin-top: 20px;
+}
